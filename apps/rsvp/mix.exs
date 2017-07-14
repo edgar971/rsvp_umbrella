@@ -12,7 +12,7 @@ defmodule Rsvp.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps(),
-     aliases: aliases]
+     aliases: aliases()]
   end
 
   # Configuration for the OTP application

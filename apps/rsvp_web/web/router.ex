@@ -17,6 +17,7 @@ defmodule RsvpWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/event/:id", EventController, :show
   end
 
   # Other scopes may use custom stacks.
