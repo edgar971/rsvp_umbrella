@@ -1,0 +1,15 @@
+<h1>Create Event</h1>
+<%= form_for @conn, login_path(@conn, :login),[as: :login], fn f -> %>
+    <div class="forn-group">
+        <%= label f, :username, "Username" %>
+        <%= text_input f, :username, class: "form-control" %>
+        <%= error_tag f, :username %>
+    </div>
+    <div class="forn-group">
+        <%= label f, :password, "Location" %>
+        <%= text_input f, :password, class: "form-control", type: "password"%>
+        <%= error_tag f, :password %>
+    </div>
+  
+    <%= submit "Login", class: "btn btn-primary pull-right" %>
+<% end %>
