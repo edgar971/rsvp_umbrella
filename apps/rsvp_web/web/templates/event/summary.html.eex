@@ -1,0 +1,1 @@
+<p><a href="<%= event_path @conn, :show, @event %>"><%= @event.title %> - <small><%= @event.location %></small></a></p>

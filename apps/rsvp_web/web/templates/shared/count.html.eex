@@ -1,0 +1,1 @@
+<p><small>Total Count: <%= Enum.count(@list) %></small></p>
