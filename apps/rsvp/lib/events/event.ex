@@ -23,9 +23,6 @@ defmodule Rsvp.Event do
     end
 
     defp must_be_future(test, value) do
-        IO.inspect("Hello")
-        IO.inspect(test)
-        IO.inspect(Ecto.DateTime.compare(value, Ecto.DateTime.utc))
         Ecto.DateTime.compare(value, Ecto.DateTime.utc)
         |> IO.inspect
         |> get_error
